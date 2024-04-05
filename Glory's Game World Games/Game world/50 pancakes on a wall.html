@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>
+Test
+</title>
+</head>
+<body>
+<canvas id="canvas" width="700" height="440"></canvas>
+<script>
+var canvas = document.getElementById("canvas").getContext("2d");
+canvas.fillStyle = "Red";
+canvas.fillRect(300,300,300,300);
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = 'red';
+ctx.strokeStyle = 'green'
+ctx.lineWidth = 3;
+ctx.font = '90px verdana';
+ctx.fillText('Q', 50, 100);
+ctx.strokeText('Q', 125, 100);
+ctx.fillText('Q', 200, 100);
+ctx.strokeText('Q', 200, 100);
+<canvas id="myCanvas"></canvas>
+canvas.fillRect(300,22,22,22);
+canvas.arc(100,100,5,0,Math.PI * 2,false);
+canvas.fillRect(25,25,25,250);
+canvas.fillRect(10,20,30,40);
+canvas.fillRect(350,350,10,20);
+canvas.fillCircle(44,44,44,44);
+canvas.fillRect(350,55,55,55);
+canvas.fillRect(100,100,175,175);
+</script>
+</body>
+</html>

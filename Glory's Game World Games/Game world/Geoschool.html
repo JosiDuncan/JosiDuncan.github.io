@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Geoschool, a proud supporter of Game world</title>
+</head>
+<body bg color="#ffeecc">
+<header>
+<input type="hidden" height="22px" length="45px">
+<body class="ignore" tabindex="1" data-source="popup">
+    <header>
+      <img src="skin/icons/logo/abp-full.svg" alt="">
+      <a id="premium-upgrade" data-i18n="premium_upgrade" class="premium upgrade" target="_blank" href="https://accounts.adblockplus.org/en_US/premium?an=adblockpluschrome&amp;av=3.20&amp;ap=chrome&amp;apv=119.0.0.0&amp;p=chromium&amp;pv=119.0.0.0&amp;s=popup">Upgrade</a>
+      <a id="premium-manage" class="premium manage premium-label" dir="ltr" target="_blank">Premium</a>
+      <button id="options" data-i18n="options_short" aria-label="Options"></button>
+    </header>
+    <div id="notification" hidden=""></div>
+    <main>
+      <div id="idle-status">
+        <h2 data-i18n="idle_header">There's nothing to block on this page!</h2>
+        <img src="skin/icons/idle.svg" alt="">
+      </div>
+      <div id="page-status">
+        <h2 data-i18n="status_header">Block ads on</h2>
+        <div class="domain">
+          <div class="details">
+            <h3 data-i18n="status_domain">This website:</h3>
+            <p id="blocking-domain">newtab</p>
+          </div>
+          <io-circle-toggle checked="" tabindex="0"><svg width="100%" viewBox="-2.5 -2.5 71 50" version="1.1" xmlns="http://www.w3.org/2000/svg" role="checkbox" aria-checked="true" aria-disabled="false">
+      <g>
+        <rect fill="#E4E4E4" x="1" y="16.8" width="64.4" height="12.6" rx="6.3"></rect>
+        <g transform="translate(31.6, 0)">
+          <circle class="outer-circle" cx="23" cy="22.4" r="22.4"></circle>
+          <circle class="on" fill="#0688CB" cx="12" cy="22.4" r="9.8"></circle>
+          <circle class="off" fill="#4B4B4B" cx="-24" cy="22.4" r="9.8"></circle>
+        </g>
+      </g>
+    </svg></io-circle-toggle>
+        </div>
+        <div class="page">
+          <div class="details">
+            <h3 data-i18n="status_page">This page:</h3>
+            <p id="blocking-page">/</p>
+          </div>
+          <io-circle-toggle checked="" tabindex="0"><svg width="100%" viewBox="-2.5 -2.5 71 50" version="1.1" xmlns="http://www.w3.org/2000/svg" role="checkbox" aria-checked="true" aria-disabled="false">
+      <g>
+        <rect fill="#E4E4E4" x="1" y="16.8" width="64.4" height="12.6" rx="6.3"></rect>
+        <g transform="translate(31.6, 0)">
+          <circle class="outer-circle" cx="23" cy="22.4" r="22.4"></circle>
+          <circle class="on" fill="#0688CB" cx="12" cy="22.4" r="9.8"></circle>
+          <circle class="off" fill="#4B4B4B" cx="-24" cy="22.4" r="9.8"></circle>
+        </g>
+      </g>
+    </svg></io-circle-toggle>
+        </div>
+      </div>
+      <div id="page-info">
+        <div id="default-container">
+          <h2 data-i18n="stats_header">Number of items blocked</h2>
+          <div id="counter-panel" class="card">
+            <div class="stats">
+              <div id="stats-page">
+                <span data-i18n="stats_label_page">on this page</span>
+                <strong class="amount">0</strong>
+              </div>
+              <div id="stats-total">
+                <span data-i18n="stats_label_total">in total</span>
+                <strong class="amount">183,519</strong>
+              </div>
+            </div>
+            <div class="share">
+              <div class="stack">
+                <button class="enter">
+                  <img src="skin/icons/share.svg" alt="">
+                  <span data-i18n="social_media_share">Share numbers with friends</span>
+                </button>
+              </div>
+              <div class="stack links">
+                <span class="link">
+                  <a class="facebook" tabindex="-1" href="https://www.facebook.com/dialog/feed?app_id=475542399197328&amp;display=page&amp;link=https%3A%2F%2Fadblockplus.org%2F&amp;hashtag=%23AdblockPlus100K" target="_blank">
+                    <img data-i18n-alt="share_on_facebook" src="skin/icons/share-on-facebook.svg" height="16" alt="Share on Facebook">
+                  </a>
+                </span>
+                <span class="link">
+                  <a class="twitter" tabindex="-1" href="https://twitter.com/intent/tweet?text=I%27ve+blocked+183%2C519+ads+with+Adblock+Plus.+Give+it+a+try+-+it%27s+FREE%21&amp;url=https%3A%2F%2Fadblockplus.org%2F&amp;via=AdblockPlus" target="_blank">
+                    <img data-i18n-alt="share_on_twitter" src="skin/icons/share-on-twitter.svg" height="14" alt="Share on Twitter">
+                  </a>
+                </span>
+                <span class="link weibo">
+                  <a class="weibo" tabindex="-1" href="http://service.weibo.com/share/share.php?title=I%27ve+blocked+183%2C519+ads+with+Adblock+Plus.+Give+it+a+try+-+it%27s+FREE%21&amp;url=https%3A%2F%2Fadblockplus.org%2F" target="_blank">
+                    <img data-i18n-alt="share_on_weibo" src="skin/icons/share-on-weibo.svg" height="14" alt="Share on Weibo">
+                  </a>
+                </span>
+                <button class="cancel" tabindex="-1" data-i18n="cancel">Cancel</button>
+              </div>
+            </div>
+          </div>
+          <div class="options">
+            <button id="block-element">
+              <strong data-i18n="easy_create_filter" class="block background-icon">Block element</strong>
+              <span data-i18n="block_element_description" class="block">Block specific element on this website</span>
+            </button>
+            <button id="issue-reporter">
+              <span data-i18n="sendReport" class="report background-icon">Report an issue on this page</span>
+            </button>
+          </div>
+        </div>
+        <div id="block-element-container">
+          <div id="block-element-info" class="card">
+            <strong data-i18n="easy_create_filter">Block element</strong>
+            <span data-i18n="click_element_to_block_it">Click an element on the page to block it.</span>
+            <div class="options">
+              <button id="block-element-cancel">
+                <span data-i18n="cancel" class="block background-icon">Cancel</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page-refresh">
+        <div class="card">
+          <strong data-i18n="refresh_this_page">Refresh this page</strong>
+          <span data-i18n="refresh_to_take_effect">Click the button below for changes to take effect.</span>
+          <button data-i18n="options_refresh">Refresh</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <io-popup-footer style="--animation-duration: 3s;"><ul role="tablist" class="tabs animated">
+      <li><button role="tab" id="footer-tab-0" aria-controls="footer-panel-0" aria-labelledby="footer-panel-description-0" aria-selected="true" tabindex="0"></button></li><li><button role="tab" id="footer-tab-1" aria-controls="footer-panel-1" aria-labelledby="footer-panel-description-1" aria-selected="false" tabindex="-1"></button></li><li><button role="tab" id="footer-tab-2" aria-controls="footer-panel-2" aria-labelledby="footer-panel-description-2" aria-selected="false" tabindex="-1"></button></li><li><button role="tab" id="footer-tab-3" aria-controls="footer-panel-3" aria-labelledby="footer-panel-description-3" aria-selected="false" tabindex="-1"></button></li><li><button role="tab" id="footer-tab-4" aria-controls="footer-panel-4" aria-labelledby="footer-panel-description-4" aria-selected="false" tabindex="-1"></button></li><!---0.538583%-->
+    </ul><ul class="panels">
+      <li role="tabpanel" id="footer-panel-0" aria-hidden="false">
+    <span class="message" id="footer-panel-description-0">
+      Interested in ABP on mobile?<!---0.538583%-->
+    </span>
+    <span class="buttons">
+      <a class="icon" data-doclink="adblock_browser_ios_store" target="_blank" href="https://adblockplus.org/redirect?link=adblock_browser_ios_store&amp;lang=en-US"><img src="skin/icons/apple.svg" alt="Available on the iTunes App Store"><!---0.538583%--></a><a class="icon" data-doclink="adblock_browser_android_store" target="_blank" href="https://adblockplus.org/redirect?link=adblock_browser_android_store&amp;lang=en-US"><img src="skin/icons/android.svg" alt="Android app on Google Play"><!---0.538583%--></a><!---0.538583%-->
+    </span>
+  </li><li role="tabpanel" id="footer-panel-1" aria-hidden="true">
+    <span class="message" id="footer-panel-description-1">
+      Want to support ABP?<!---0.538583%-->
+    </span>
+    <span class="buttons" hidden="">
+      <a class="" data-doclink="donate" target="_blank" href="https://adblockplus.org/redirect?link=donate&amp;lang=en-US">Donate<!---0.538583%--><!---0.538583%--></a><!---0.538583%-->
+    </span>
+  </li><li role="tabpanel" id="footer-panel-2" aria-hidden="true">
+    <span class="message" id="footer-panel-description-2">
+      Enjoying the extension?<!---0.538583%-->
+    </span>
+    <span class="buttons" hidden="">
+      <a class="" data-doclink="%store%_review" target="_blank" href="https://adblockplus.org/redirect?link=chrome_review&amp;lang=en-US">Rate ABP<!---0.538583%--><!---0.538583%--></a><!---0.538583%-->
+    </span>
+  </li><li role="tabpanel" id="footer-panel-3" aria-hidden="true">
+    <span class="message" id="footer-panel-description-3">
+      Stay connected with us!<!---0.538583%-->
+    </span>
+    <span class="buttons" hidden="">
+      <a class="icon" data-doclink="social_facebook" target="_blank" href="https://adblockplus.org/redirect?link=social_facebook&amp;lang=en-US"><img src="skin/icons/share-on-facebook.svg" alt="Connect on Facebook"><!---0.538583%--></a><a class="icon" data-doclink="social_twitter" target="_blank" href="https://adblockplus.org/redirect?link=social_twitter&amp;lang=en-US"><img src="skin/icons/share-on-twitter.svg" alt="Connect on Twitter"><!---0.538583%--></a><!---0.538583%-->
+    </span>
+  </li><li role="tabpanel" id="footer-panel-4" aria-hidden="true">
+    <span class="message" id="footer-panel-description-4">
+      Having trouble using ABP?<!---0.538583%-->
+    </span>
+    <span class="buttons" hidden="">
+      <a class="" data-doclink="help_center" target="_blank" href="https://adblockplus.org/redirect?link=help_center&amp;lang=en-US">Get Help<!---0.538583%--><!---0.538583%--></a><!---0.538583%-->
+    </span>
+  </li><!---0.538583%-->
+    </ul></io-popup-footer>
+    </footer>
+  
+
+</body>
